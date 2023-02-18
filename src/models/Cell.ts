@@ -22,7 +22,14 @@ export class Cell {
         this.id = Math.random();
     }
 
-    isEmpty () {
+    isEnemy (target: Cell): boolean {
+        if(target.figure) {
+        return this.figure?.color !== target.figure.color;
+        }
+        return false;
+    }
+
+    isEmpty (): boolean {
         return this.figure === null;
     }
     isEmptyVertical (target: Cell): boolean{
