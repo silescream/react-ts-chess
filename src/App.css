@@ -52,3 +52,15 @@
     background-color: greenyellow;
 
 }
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
+}
+
+.restart {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
